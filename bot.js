@@ -15,7 +15,7 @@ fs.readdir("./commands/", (err, files) => {
 
 bot.on("ready" () => {
   bot.user.setActivity(`Supporting ${bot.guilds.size}, servers!`)
-  console.log('Bane-Bot is ready!!!')
+  console.log('Bane-Bot is ready!')
 })
 
 bot.on('message', message => {
