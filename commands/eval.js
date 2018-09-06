@@ -1,5 +1,5 @@
 const Discord = require('discord.js');
-const developers = require('../team.json').eval-access
+const developers = require('../team.json').evalaccess
 
 module.exports.run = (bot, message, args) => {
     if (developers.includes(message.author.id)) {
