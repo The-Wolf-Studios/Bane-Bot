@@ -1,5 +1,5 @@
-mmodule.exports.run = (bot, message, args, discord) => {
-    var mes = args.join(' ')
+module.exports.run = (bot, message, args, discord) => {
+    var mes = args.join(' ');
     if (!mes) return message.channel.send("You need to provide a message.")
     let em = new discord.RichEmbed()
     .setTitle(`Contact System`)
