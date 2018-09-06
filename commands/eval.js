@@ -19,7 +19,7 @@ module.exports.run = (bot, message, args) => {
     return message.channel.send(err, { code: 'js' })
   }); 
     } else {
-        message.channel.send("Owner only, you cannot use this command.")
+        message.channel.send("Developers only, sorry.")
     }
   }
 
