@@ -1,4 +1,3 @@
-const discord = require('discord.js')
 const developerids = require(`../team.json`)
 module.exports.run = (bot, message, args, discord) => {
   if (developerids.includes(message.author.id)) {
