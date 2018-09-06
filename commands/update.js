@@ -1,6 +1,6 @@
 module.exports.run = (bot, message, args, discord) => {
 let joinargs = args.join(" ");
-let em = discord.RichEmbed()
+let em = new discord.RichEmbed()
   .setTitle('Update Notes!')
   .setDescription(joinargs)
   .setFooter(`Sent by ${message.author.username}`)
