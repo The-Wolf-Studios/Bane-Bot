@@ -1,5 +1,5 @@
 const discord = require('discord.js');
-var bot = new Discord.Client();
+var bot = new discord.Client();
 const config = require(`./config.json`);
 const staff = require(`./team.json`);
 const fs = require('fs');
