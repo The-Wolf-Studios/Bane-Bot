@@ -9,3 +9,6 @@ module.exports.run = (bot, message, args, discord) => {
   
   messages.channel.send({embed: emb})
 }
+module.exports.help = {
+    name: "contact"
+}
