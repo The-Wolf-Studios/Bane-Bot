@@ -4,8 +4,8 @@ module.exports.run = (bot, message, args, discord) => {
   .setTitle("Support Ticket.")
   .setDescription(issue)
   .setColor("GREEN")
-  .addField("Ticket Number", Math.floor(Math.random()*1000))
-  .setFooter(message.author.username)
+  .addField("Ticket Number", `${Math.floor(Math.random()*1000)}`)
+  .setFooter(`${message.author.username}`)
   
   message.channel.send({embed: emb})
 }
