@@ -7,7 +7,7 @@ module.exports.run = (bot, message, args, discord) => {
   .addField("Ticket Number", Math.floor(Math.random()*1000))
   .setFooter(message.author.username)
   
-  messages.channel.send({embed: emb})
+  message.channel.send({embed: emb})
 }
 module.exports.help = {
     name: "contact"
