@@ -1,6 +1,6 @@
 module.exports.run = (bot, message, args, discord) => {
-  let issue = args.join(" ")
-  let emb = discord.RichEmbed()
+  let issue = args.join(" ");
+  let emb = discord.RichEmbed();
   .setTitle("Support Ticket.")
   .setDescription(issue)
   .setColor("GREEN")
