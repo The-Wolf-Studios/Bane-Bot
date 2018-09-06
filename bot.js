@@ -1,4 +1,4 @@
-const Discord = require('discord.js');
+const discord = require('discord.js');
 var bot = new Discord.Client();
 const config = require(`./config.json`);
 const staff = require(`./team.json`);
