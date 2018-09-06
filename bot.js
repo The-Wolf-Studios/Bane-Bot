@@ -13,7 +13,7 @@ fs.readdir("./commands/", (err, files) => {
   });
 });
 
-bot.on("ready" () => {
+bot.on("ready", () => {
   bot.user.setActivity(`Supporting ${bot.guilds.size}, servers!`)
   console.log('Bane-Bot is ready!!')
 })
