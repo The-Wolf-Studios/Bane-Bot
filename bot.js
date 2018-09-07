@@ -17,7 +17,11 @@ fs.readdir("./commands/", (err, files) => {
 bot.on("ready", () => {
   bot.user.setActivity(`Supporting ${bot.guilds.size}, servers!`)
   console.log('Bane-Bot is ready!!')
-})
+});
+bot.on("guildcreate", () => {
+  bot.user.setActivity(`Supporting ${bot.guilds.size}, servers!`)
+  console.log(`Joined a new guild`)
+});
 
 bot.on('message', message => {
   let mArray = message.content.split(" ")
@@ -30,5 +34,5 @@ bot.on('message', message => {
   if (cmd) {
     cmd.run(bot, message, args, discord)
   }
-})
+});
 bot.login(process.env.TOKEN)
