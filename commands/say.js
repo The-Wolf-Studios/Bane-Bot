@@ -5,3 +5,7 @@ module.exports.run = (bot, message, args, discord) => {
 
 
 }
+
+module.exports.help = {
+    name: "say"
+}
